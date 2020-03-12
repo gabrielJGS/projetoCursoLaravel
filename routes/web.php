@@ -17,3 +17,4 @@ Route::get('/', function () {
 Route::get('/layout', function () {
     return view('Layouts/LayoutFull');
 });
+Route::resource('carros','Carros\CarrosController');
