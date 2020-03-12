@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Jekyll v3.8.6">
-  <title>Pricing example · Bootstrap</title>
+  <title>Projeto do Curso - @yield('title')</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/pricing/">
 
@@ -48,21 +48,10 @@
       }
     }
   </style>
-  <!-- Custom styles for this template -->
-  <link href="./Pricing example · Bootstrap_files/pricing.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-    <h4 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="https://getbootstrap.com/docs/4.4/examples/pricing/#">Features</a>
-        <a class="p-2 text-dark" href="https://getbootstrap.com/docs/4.4/examples/pricing/#">Enterprise</a>
-        <a class="p-2 text-dark" href="https://getbootstrap.com/docs/4.4/examples/pricing/#">Support</a>
-        <a class="p-2 text-dark" href="https://getbootstrap.com/docs/4.4/examples/pricing/#">Pricing</a>
-      </nav>
-      <a class="btn btn-outline-primary" href="https://getbootstrap.com/docs/4.4/examples/pricing/#">Sign up</a>
-  </div>
+ @include('Layouts.Menu')
 
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
     <h1 class="display-4">Pricing</h1>
@@ -71,7 +60,7 @@
   </div>
 
   <div class="container">
-    <div class="card-deck mb-3 text-center">
+    {{-- <div class="card-deck mb-3 text-center">
       <div class="card mb-4 shadow-sm">
         <div class="card-header">
           <h4 class="my-0 font-weight-normal">Free</h4>
@@ -117,7 +106,7 @@
           <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
         </div>
       </div>
-    </div>
+    </div> --}}
 
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
       <div class="row">
