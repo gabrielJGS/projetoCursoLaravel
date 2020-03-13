@@ -19,16 +19,18 @@ class CarrosController extends Controller
         return view('Carros/index', compact('carros'));
     }
     public function store(Request $request){
+        $data = $request->all();
+
         $carroModel = app(Carro::class);
         $carro = $carroModel->create([
-            'modelo' => 'celta',
-            'marca' => 'chevrolet',
-            'ano' => 2012,
-            'versao' => 'ltz',
-            'em_producao' => false
+            'modelo' => $data['modelo'],
+            'marca' => $data['marca'],
+            'ano' => $data['ano'],
+            'versao' => $data['versao'],
+            'em_producao' => isset($data['em_producao'])?true:false
         ]);
         
-        return redirect('/carros');
+        return redirect('/carros')->with('success', 'Contact saved!');
     }
     public function create(){
         return view('Carros/create');

@@ -25,7 +25,7 @@
   <link rel="icon" href="https://getbootstrap.com/docs/4.4/assets/img/favicons/favicon.ico">
   <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
   <meta name="theme-color" content="#563d7c">
-
+  <script src="https://kit.fontawesome.com/125c21ecbc.js" crossorigin="anonymous"></script>
 
   <style>
     .bd-placeholder-img {

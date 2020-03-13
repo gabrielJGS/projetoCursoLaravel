@@ -3,7 +3,7 @@
 @endpush
 @section('conteudo')
 <body>
-    <a class="btn btn-success" href="./create" role="button" style="margin:10px;float:right">Adicionar</a>
+    <a class="btn btn-success" href="{{route('carros.create')}}" role="button" style="margin:10px;float:right"><i class="fas fa-plus-circle"></i> Adicionar</a>
     <table class="table table-striped table-hover">
         <thead class="thead-dark">
           <tr>
@@ -24,8 +24,8 @@
                     <td>{{$carro->ano}}</td>
                     <td>{{$carro->versao}}</td>
                     <td>
-                        <a class="btn btn-warning btn-sm" href="carros/create" role="button" style="margin:10px;float:right">Editar</a>
-                        <a class="btn btn-danger btn-sm" href="carros/create" role="button" style="margin:10px;float:right">Excluir</a>
+                        <a class="btn btn-warning btn-sm" href="carros/create" role="button"><i class="fas fa-edit"></i> Editar</a>
+                        <a class="btn btn-danger btn-sm" href="carros/create" role="button"><i class="fas fa-trash-alt"></i> Excluir</a>
                     </td>
                 </tr>
             @endforeach        
@@ -35,6 +35,7 @@
 @endsection
 
 <!-- @push('scripts')
+    
     {{-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> --}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
