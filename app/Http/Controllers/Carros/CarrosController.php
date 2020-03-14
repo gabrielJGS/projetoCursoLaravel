@@ -44,6 +44,7 @@ class CarrosController extends Controller
 
         return redirect('/carros')->with('success', 'Carro deletado!');
     }
+
     // public function update(Request $request, $id)
     // {
     //     $request->validate([
